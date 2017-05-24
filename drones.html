@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drone Strikes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="drones.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Drone Strikes</h2>
+        <p>The United States has executed hundreds of drone strikes since 2002. Sometimes innocent civilians or children are injured or even killed as a result of a strike.</p>
+        <p>Enter a number in the text box to get Drone Strike info:</p>
+        <p/>
+        <div id="strike_number" class="control-group">
+            <input type="text" name="strike" id="strike" placeholder="Enter a number..." />
+        </div>
+        <p/><p/>
+
+        <button class='btn btn-success btn-large' onclick="findStrike('strike')">Click</button>
+
+        <br/>
+        <div>
+            <div id="output" class=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

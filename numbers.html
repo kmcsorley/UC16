@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Facts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="numbers.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Number Facts!</h2>
+        <p>Select a type of fact and enter a number in the text box to get an interesting fact about that number:</p>
+        <p/>
+
+        <form id="type">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="type" value="trivia">Trivia</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="type" value="year">Year</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="type" value="date">Day of Year (1-366)</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="type" value="math">Math</label>
+            </div>
+        </form>
+        <p/>
+        <div class="control-group">
+            <input type="text" name="number" id="number" placeholder="Enter a number..." />
+        </div>
+        <p/>
+        <p/>
+
+        <button type="submit" class='btn btn-success btn-large' onclick="getNumber('number', 'type')">Click</button>
+
+        <br/>
+        <div>
+            <div id="output" class=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

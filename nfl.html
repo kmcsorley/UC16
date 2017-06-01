@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NFL Arrests</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="nfl.js"></script>
+    <style>
+        img {
+            border-right: 3em;
+        }
+
+        #crime_list {
+            width: 30em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>NFL Arrest Info</h2>
+        <p>Find NFL arrest info sorted by team:</p>
+        <p/>
+        <form>
+            <div id="crime_list" class="form-group">
+                <label for="crime_list">Select a type of crime:</label>
+                <select class="form-control">
+                    <option name="crime" value="DUI">DUI</option>
+                    <option name="crime" value="Assault">Assault</option>
+                    <option name="crime" value="Alcohol">Alcohol</option>
+                    <option name="crime" value="Battery">Battery</option>
+                    <option name="crime" value="DUI">DUI</option>
+                    <option name="crime" value="Drugs">Drugs</option>
+                    <option name="crime" value="Domestic violence">Domestic violence</option>
+                    <option name="crime" value="Assault">Assault</option>
+                    <option name="crime" value="Disorderly conduct">Disorderly conduct</option>
+                    <option name="crime" value="Gun">Gun</option>
+                    <option name="crime" value="License">License</option>
+                    <option name="crime" value="Reckless driving">Reckless driving</option>
+                    <option name="crime" value="Alcohol">Alcohol</option>
+                    <option name="crime" value="Resisting arrest">Resisting arrest</option>
+                    <option name="crime" value="Battery">Battery</option>
+                    <option name="crime" value="Theft">Theft</option>
+                    <option name="crime" value="Public intoxication">Public intoxication</option>
+                    <option name="crime" value="DUI, drugs">DUI, drugs</option>
+                    <option name="crime" value="Outstanding warrant">Outstanding warrant</option>
+                    <option name="crime" value="Assault, gun">Assault, gun</option>
+                    <option name="crime" value="Drugs, gun">Drugs, gun</option>
+                    <option name="crime" value="Failure to appear">Failure to appear</option>
+                    <option name="crime" value="Trespassing">Trespassing</option>
+                    <option name="crime" value="Sex">Sex</option>
+                    <option name="crime" value="Obstruction">Obstruction</option>
+                    <option name="crime" value="Violating court order">Violating court order</option>
+                    <option name="crime" value="Gun, drugs">Gun, drugs</option>
+                    <option name="crime" value="Violating court order">Violating court order</option>
+                    <option name="crime" value="Gun, drugs">Gun, drugs</option>
+                    <option name="crime" value="Animal abuse">Animal abuse</option>
+                    <option name="crime" value="Solicitation">Solicitation</option>
+                    <option name="crime" value="Probation violation">Probation violation</option>
+                    <option name="crime" value="DUI, gun">DUI, gun</option>
+                    <option name="crime" value="Harassment">Harassment</option>
+                    <option name="crime" value="Harassment">Harassment</option>
+                    <option name="crime" value="Assault, alcohol">Assault, alcohol</option>
+                    <option name="crime" value="Manslaughter">Manslaughter</option>
+                    <option name="crime" value="Murder, gun">Murder, gun</option>
+
+                </select>
+            </div>
+        </form>
+        <!--div class="control-group">
+            <input type="text" id="crime" placeholder="Enter a type of crime..." />
+        </div-->
+        <p/>
+        <p/>
+        <button type="submit" class='btn btn-success btn-large' onclick="getInfo()">Get Info:</button>
+        <p/>
+        <div id="output">Arrest info...</div>
+        <p/>
+        <p/>
+        <p/>
+        <p/>
+        <div id="result"></div>
+    </div>
+</body>
+
+</html>
+
+
+<!------------------------------ RADIO BUTTONS --------------------------------------
+         <form id="type">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="ans" value="True">True</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="ans" value="False">False</label>
+            </div>
+        </form>
+        <p/><p/>
+        <button type="submit" class='btn btn-success btn-large' onclick="checkAnswer()">Check Your Answer!</button>
+
+         ----------------------------------------------------------------------------------->
+<!--------------------------TEXT BOX---------------------------------------->
+<!--div class="control-group">
+            <input type="text" name="" placeholder="Enter a number..." />
+        </div>
+        <p/-->

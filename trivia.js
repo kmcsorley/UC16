@@ -52,7 +52,8 @@ function displayQuestion(data) {
     }
 }
 
-function checkAnswer() {
+function checkAnswer(player_answer) {
+    /***************************************************
 
     //Get players answer from radio buttons
     var answers = document.getElementsByName('ans');
@@ -64,6 +65,8 @@ function checkAnswer() {
     }
     console.log(player_answer);
     console.log(correct_answer);
+
+    ***************************************************/
     if (player_answer === correct_answer) {
         document.getElementById("result").innerHTML = "CORRECT!";
         document.getElementById("result").className = "alert alert-success";

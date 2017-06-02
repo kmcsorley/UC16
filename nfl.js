@@ -27,9 +27,9 @@ function getInfo() {
                 console.log("successful request!");
                 displayInfo(this.responseText, crime_type);
             } else if (this.status === 404) {
-                // No strike number found
+                // No crimes found found
                 console.log("request failed");
-                displayInfo('{ "teams[1].team" : "none" }', crime_type);
+                displayInfo('{ "teams[0].Team" : "none" }', crime_type);
             } else {
                 console.log("We have a problem...server responded with code: " + this.status);
             }
@@ -46,7 +46,7 @@ function getInfo() {
 
 /**
  * Displays the trivia question given the JSON data
- * @param {string} data JSON data representing location for given strike number
+ * @param {string} data JSON data representing crime totals sorted by team
  */
 function displayInfo(data, crimeId) {
     var crime_type = crimeId; //document.getElementById("crime").value;
@@ -64,7 +64,10 @@ function displayInfo(data, crimeId) {
     }
 }
 
-
+/**
+ * Gets the image source for a team
+ * @param {string} team - the team abbreviation
+ */
 function getLogo(team) {
     var source = "";
     var logo = "";

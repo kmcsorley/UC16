@@ -4,7 +4,12 @@
  */
 function getId(showId) {
 
+    var show_name = document.getElementById(showId).value;
+    console.log(show_name);
+
     // First get the name of the show from the HTML dropdown selector code
+
+    /* ---------Difficult way to get show title---------------
     var shows = document.getElementsByName(showId);
     var show_name = "";
     for (i = 0; i < shows.length; i++) {
@@ -12,7 +17,7 @@ function getId(showId) {
             show_name = shows[i].value;
         }
     }
-    console.log(show_name);
+    ----------------------------------------------------------*/
 
     // Now make a HTTP request
     var httpRequest = new XMLHttpRequest();
